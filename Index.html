@@ -14,32 +14,59 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-light p-1 " style="background-color: #DC8643">
-        <a class="navbar-brand m-0 p-0 d-flex align-items-center" href="#">
-            <img class="logo mr-1 " src="img\logo.png" height="45" alt="logo">
-            <span class="logo-name "> BRAND NAME</span>
-        </a>
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light p-0" style="background-color: #DC8643">
+       
+            <a class="navbar-brand m-0 ml-2 d-flex align-items-center" href="#">
+                <img class="logo mr-1 p-0" src="img\logo.png" height="45" alt="logo">
+                <span class="logo-name "> BRAND NAME</span>
+            </a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-auto mt-lg-0">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mr-4 mt-auto mt-lg-0 p-2">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Programs
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Acconmondation
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">FAQs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Disabled</a>
+                   <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item apply">
+                    <a class="nav-link" href="#">Apply</a>
                 </li>
             </ul>
 
         </div>
-    </nav>
+    </nav> 
 
-    <header>
+    <div class="video-background-holder">
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
           <source src="171124_A1_HD_021.mp4" type="video/mp4">
@@ -52,7 +79,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
