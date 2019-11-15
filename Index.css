@@ -3,7 +3,12 @@
 }
 
 .navbar {
+    transition: all 0.25s ease-out;
+}
+
+.navbar.scrolled {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    background-color: rgba(220, 133, 67, 0.5)
 }
 
 .navbar-brand {
@@ -15,11 +20,11 @@
     color: #F4F7F5;
     font-weight: 800;
     letter-spacing: -0.01em;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 a.nav-link {
-    color: #F4F7F5 !important;
+    color: #f4f7f5 !important;
     font-weight: 500;
     font-size: 14px;
 }
@@ -46,7 +51,7 @@ a.nav-link {
 .video-background-holder {
     position: relative;
     background-color: black;
-    height: calc(100vh - 28px);
+    height: calc(100vh - 15px);
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
@@ -67,12 +72,12 @@ a.nav-link {
     transform: translateX(-50%) translateY(-50%);
 }
 
-header .container {
+.video-background-holder .container {
     position: relative;
     z-index: 2;
 }
 
-header .overlay {
+.video-background-holder .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -102,6 +107,67 @@ header .overlay {
     }
 }
 
+.tagline {
+    font-family: Mplus 1p;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 84px;
+    display: flex;
+    letter-spacing: -0.05em;
+    text-transform: capitalize;
+    /* Light Color */
+    color: #F4F7F5;
+    text-shadow: 2px 4px 25px rgba(0, 0, 0, 0.25);
+}
+
 .mission-jumbotron * {
-    color: white;
+    color: #F4F7F5;
+}
+
+.mission-jumbotron {
+    background: linear-gradient(103.54deg, #DC582E -11.51%, #DCC05D 110.25%);
+}
+
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #F4F7F5;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
 }
