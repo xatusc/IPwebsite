@@ -2,8 +2,14 @@
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-html body {
+html,
+body {
+    width: 100%;
     overflow-x: hidden;
+}
+
+.nav-container {
+    max-width: 100%;
 }
 
 .navbar {
@@ -135,6 +141,7 @@ a.nav-link {
 .explore-option {
     border-color: #F4F7F5 !important;
     color: #F4F7F5 !important;
+    font-family: Mplus 1p !important;
 }
 
 .explore-option:hover {
