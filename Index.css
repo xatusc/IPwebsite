@@ -2,6 +2,10 @@
     font-family: 'M PLUS 1p', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .navbar {
     transition: all 0.25s ease-out;
 }
@@ -27,6 +31,7 @@ a.nav-link {
     color: #f4f7f5 !important;
     font-weight: 500;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 .navbar-nav .nav-link {
@@ -74,6 +79,8 @@ a.nav-link {
 
 .video-background-holder .container {
     position: relative;
+    margin-left: 8%;
+    margin-top: 4%;
     z-index: 2;
 }
 
@@ -107,11 +114,16 @@ a.nav-link {
     }
 }
 
+.tagline-box {
+    margin-bottom: 10%;
+    color: #F4F7F5;
+}
+
 .tagline {
     font-family: Mplus 1p;
     font-style: normal;
     font-weight: 800;
-    font-size: 84px;
+    font-size: 62px;
     display: flex;
     letter-spacing: -0.05em;
     text-transform: capitalize;
@@ -120,12 +132,37 @@ a.nav-link {
     text-shadow: 2px 4px 25px rgba(0, 0, 0, 0.25);
 }
 
+.explore-option {
+    border-color: #F4F7F5 !important;
+    color: #F4F7F5 !important;
+}
+
+.explore-option:hover {
+    color: #DC582E !important;
+}
+
 .mission-jumbotron * {
     color: #F4F7F5;
 }
 
 .mission-jumbotron {
     background: linear-gradient(103.54deg, #DC582E -11.51%, #DCC05D 110.25%);
+}
+
+.mission-title {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.015em;
+}
+
+.mission-text {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.mission-text-item {
+    margin: 0 5px;
 }
 
 .icon-bar {
@@ -170,4 +207,22 @@ button:focus {
 
 .navbar-toggler.collapsed .bottom-bar {
     transform: rotate(0);
+}
+
+.courses-title {
+    font-size: 12px !important;
+    color: #DC582E;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    font-family: Mplus 1p !important;
+}
+
+.courses-container {
+    margin-top: 10%;
+}
+
+.courses-intro {
+    font-family: Mplus 1p !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.01em;
 }
