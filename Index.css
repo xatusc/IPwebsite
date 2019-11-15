@@ -2,9 +2,7 @@
     font-family: 'M PLUS 1p', sans-serif;
 }
 
-html,
-body {
-    width: 100%;
+.body-wrapper {
     overflow-x: hidden;
 }
 
