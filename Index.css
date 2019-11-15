@@ -30,8 +30,17 @@ a.nav-link {
 }
 
 .apply {
-    height: ;
-    background-color: white;
+    margin: -10px 0;
+    padding: 10px 0;
+    border-radius: 1px;
+    height: 100%;
+    background: #F4F7F5;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), -2px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.apply-text {
+    color: #DC8643;
+    font-weight: 800;
 }
 
 .video-background-holder {
@@ -81,4 +90,18 @@ header .overlay {
     header video {
         display: none;
     }
+}
+
+@media (max-width: 991.98px) {
+    .apply {
+        width: calc(100% + 20px);
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
+.mission-jumbotron * {
+    color: white;
 }
