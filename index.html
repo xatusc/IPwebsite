@@ -10,7 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap\bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="css\Index.css">
+    <link rel="stylesheet" href="css\Style7.css">
+
     <title>Hello, world!</title>
 </head>
 
@@ -27,33 +29,35 @@
                 </a>
 
                 <!-- TOGGLER -->
-                <button class="navbar-toggler custom-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler custom-toggler collapsed trigger-overlay" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icon-bar top-bar"></span>
                 <span class="icon-bar middle-bar"></span>
 	            <span class="icon-bar bottom-bar"></span>	
-            </button>
+                </button>
 
                 <!-- NAV ITEMS -->
-                <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto mr-3 mt-auto mt-lg-0 p-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="#">
+                                About Us
+                            </a>
                         </li>
                         <li class="divider"></li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mydropdownjQuery">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Programs
-                        </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow-lg" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Program 1</a>
                                 <a class="dropdown-item" href="#">Program 2</a>
                                 <a class="dropdown-item" href="#">Program 3</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mydropdownjQuery">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Accommodations
-                        </a>
+                            </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">Option 1</a>
                                 <a class="dropdown-item" href="#">Option 2</a>
@@ -75,12 +79,27 @@
             </nav>
         </div>
 
+        <!-- OVERLAY -->
+        <div class="overlay overlay-contentpush">
+            <button type="button" class="overlay-close">Close</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <!-- VIDEO BACKGROUND -->
         <div class="video-background-holder">
             <div class="overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-          <source src="171124_A1_HD_021.mp4" type="video/mp4">
-        </video>
+            <img class="photo-bg" src="img\s5h4bco2tdkws8fhc5fj.jpg">
+            <video class="video-bg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="171124_A1_HD_021.mp4" type="video/mp4">
+            </video>
             <div class="container h-100">
                 <div class="d-flex h-100 align-items-center">
                     <div class="w-100 text-white tagline-box ml-sm-1">
@@ -108,59 +127,351 @@
 
         <!-- COURSES -->
         <div class="container courses-container">
-            <h6 class="courses-title col-2">COURSES</h6>
+            <h6 class="section-title col-2">COURSES</h6>
             <h3 class="courses-intro col-sm-8">What You Will Learn</h3>
-            <p class="courses-paragraph col-md-6 col-sm-8">With the dope classes you will sure learn many many things you could only imagine before and become a person that you will love and others will love.</p>
+            <p class="courses-paragraph col-md-6 col-sm-8 col-10">With the awesome classes you will learn many many things you could only imagine before and become a stronger and happier human being.</p>
         </div>
 
         <!-- COURSE DECK -->
-        <div class="card-deck m-4 px-5 justify-content-center mb-5">
-            <div class="card shadow pb-2">
+        <div class="card-deck mx-4 mt-5 px-4 px-lg-5 justify-content-center mb-5">
+            <div class="card shadow pb-2 hvr-float">
                 <img class="card-img-top mb-3" src="img\estudiar-enla-playa.jpg" alt="Card image cap">
-                <div class="card-body pt-4 ">
+                <div class="card-body px-4 pt-3 ">
                     <p class="card-title ">Nomadic Entrepreneurship</p>
                     <hr class="course-divider row ml-1">
                     <p class="card-text ">Your Business is a reflection of you. You want to grow effortlessly and reach greater results in less hours? It’s a work on yourself first.</p>
                 </div>
+                <a href="#" class="stretched-link"></a>
             </div>
-            <div class="card shadow pb-2">
+            <div class="card shadow pb-2 hvr-float">
                 <img class="card-img-top mb-3" src="img\collaboration1_cover.jpeg" alt="Card image cap">
-                <div class="card-body pt-4">
+                <div class="card-body px-4 pt-3">
                     <p class="card-title">Social Entrepreneurship</p>
                     <hr class="course-divider row ml-1">
                     <p class="card-text">Turn what has been done into something completely differentn. Do whatever you feel like doing, understand all of it at the same time.</p>
                 </div>
+                <a href="#" class="stretched-link"></a>
             </div>
-            <div class="card shadow pb-2">
+            <div class="card shadow pb-2 hvr-float">
                 <img class="card-img-top mb-3" src="img\6001.jpg" alt="Card image cap">
-                <div class="card-body pt-4">
+                <div class="card-body px-4 pt-3">
                     <p class="card-title">Sustainable Ecosystem</p>
                     <hr class="course-divider row ml-1">
                     <p class="card-text">Take care of animals and talk to your parents and say no to drugs. Be good to yourself and others around you. Laugh and say hi.</p>
                 </div>
+                <a href="#" class="stretched-link"></a>
             </div>
         </div>
 
-
-        <!-- OPTIONS -->
-        <div class="container options-container">
-            <h6 class="courses-title col-2">OPTIONS</h6>
-            <h3 class="courses-intro col-sm-8">Offers</h3>
-            <p class="courses-paragraph col-md-6 col-sm-8">With the dope classes you will sure learn many many things you could only imagine before and become a person that you will love and others will love.</p>
-            <div class="container-fluid">
-                <img class="m-0 p-0" src="img\forest.jpg">
-            </div>
-        </div>
 
         <!-- ABOUT US -->
-        <p class="about">ABOUT</p>
-        <p class="us">US</p>
+        <div class="about-us mb-sm-5 pb-sm-5">
+            <div class="mt-5 position-relative ">
+                <p class="about ">ABOUT</p>
+                <p class="us ">US</p>
+            </div>
+
+            <div class="position-relative col-sm-6 col-10 float-sm-right core-philosophy ">
+                <p class="about-subtitle py-0">Core Philosophy</p>
+                <p class="philosophy-text justify-content-center">We are incredible and we love people! We have lots of energy and we care about people. We care about you and we love you and we want to help you and help everybody. We will do great together and we will become an amazing team. We care
+                    about our surronding and we care about oursleves. Let’d do great things together.</p>
+            </div>
+
+            <div>
+                <img class="about-photo-1 float-sm-right col-sm-6 col-12 pr-0 pl-0" src="img\blueprint-company-concept-7366.jpg ">
+            </div>
+
+            <div class="position-relative col-12 col-sm-5 col-md-6 float-sm-left core-principles ">
+                <p class="about-subtitle ">Core Principles</p>
+                <p><b>Kindness</b> We are incredible and we love people! We have lots of energy and we care about people.</p>
+                <p><b>Love</b> We care about you and we love you and we want to help you and help everybody. We do great together and we are a team. </p>
+                <p><b>Success</b> We care about our surronding and we care about oursleves. Let’d do great things together.</p>
+            </div>
+        </div>
+
+        <!-- OPTIONS -->
+        <div class=" container options-container pb-5 pt-sm-5">
+            <h6 class="section-title col-2 ">OPTIONS</h6>
+            <h3 class="courses-intro col-sm-8 ">What Is Your Path?</h3>
+            <p class="courses-paragraph col-md-6 col-11 col-sm-8 ">With the classes you will sure learn many many things you could only imagine before and become a person that you will love and others will love.</p>
+        </div>
+        <div class="options ">
+            <div class="container-fluid option-1-box ">
+                <div class="row h-100 ">
+                    <div class="col-1 h-100 align-self-center ">
+                        <p class="option d-none d-sm-block">1</p>
+                    </div>
+                    <div class="col-6 align-self-lg-center ">
+                        <p class="option-name ">STANDARD</p>
+                    </div>
+                    <div class="col-4 align-self-center pt-md-5 pt-lg-0">
+                        <p class="option-text ">This is the most basic option out of all three of the ones available. It's straight to the point and economically friendly. </p>
+                        <p class="option-text ">It offers you the freedom to explore as you like and also enjoy the company of friends.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid option-2-box ">
+                <div class="row h-100 ">
+                    <div class="col-1 h-100 align-self-center ">
+                        <p class="option d-none d-sm-block">2</p>
+                    </div>
+                    <div class="col-6 align-self-lg-center ">
+                        <p class="option-name ">PREMIUM</p>
+                    </div>
+                    <div class="col-4 align-self-center pt-md-5 pt-lg-0">
+                        <p class="option-text ">You do it this way. It’s an amazing option and it’s wonderful. You’ll love it. Come on I will show you!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid option-3-box ">
+                <div class="row h-100 ">
+                    <div class="col-1 h-100 align-self-center ">
+                        <p class="option d-none d-sm-block">3</p>
+                    </div>
+                    <div class="d-flex col-3 option-3-flex align-self-lg-center ">
+                        <p class="option-name ">ALL INCLUSIVE</p>
+                    </div>
+                    <div class="col-3 "></div>
+
+                    <div class="col-5 align-self-center pt-md-5 pt-lg-0">
+                        <p class="option-text ">This option gives you the choices to enjoy yourself. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOCATION -->
+        <div class=" container location-container pb-5 pt-5">
+            <h6 class="section-title col-2 ">LOCATION</h6>
+            <h3 class="courses-intro col-sm-8 ">Nature & Culture</h3>
+            <p class="courses-paragraph col-md-6 col-sm-8 ">There are a great variety of activities and location to explore. Whether its productive, get-togethers, adventure, or enjoyment, there are plenty options for you to choose from and discover.</p>
+        </div>
+        <div class="location-video">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/H_CN8W_uCys?wmode=transparent&amp;rel=0&amp;showinfo=0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+        <!-- Section: Testimonials v.2 -->
+        <div class="container location-container pt-5">
+            <h6 class="section-title col-2 ">TESTIMONIAL</h6>
+            <h3 class="courses-intro col-sm-8 ">Nature & Culture</h3>
+            <p class="courses-paragraph col-md-6 col-sm-8 ">There are a great variety of activities and location to explore. Whether its productive, get-togethers, adventure, or enjoyment, there are plenty options for you to choose from and discover.</p>
+        </div>
+        <section class="testimonial-section text-center my-5">
+            <!-- Section heading -->
+            <div class="wrapper-carousel-fix">
+                <!-- Carousel Wrapper -->
+                <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p class="px-5 mx-auto col-lg-8">
+                                    <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
+                                    cum accusamus eveniet molestias voluptatum inventore laboriosam labore sit, aspernatur praesentium iste impedit quidem dolor veniam.
+                                </p>
+                                <h4 class="font-weight-bold">Anna Deynah</h4>
+                                <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+
+                            </div>
+                        </div>
+                        <!--First slide-->
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(31).jpg" class="rounded-circle img-fluid" alt="Second sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p class="px-5 mx-auto col-lg-8">
+                                    <i class="fas fa-quote-left"></i> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                                    qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore. </p>
+                                <h4 class="font-weight-bold">Maria Kate</h4>
+                                <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+
+                            </div>
+                        </div>
+                        <!--Second slide-->
+                        <!--Third slide-->
+                        <div class="carousel-item">
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto mb-4">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
+                                </div>
+                                <!--Content-->
+                                <p class="px-5 mx-auto col-lg-8">
+                                    <i class="fas fa-quote-left"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                                <h4 class="font-weight-bold">John Doe</h4>
+                                <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+
+                            </div>
+                        </div>
+                        <!--Third slide-->
+                    </div>
+                    <!--Slides-->
+                    <!--Controls-->
+                    <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                    <!--Controls-->
+                </div>
+                <!-- Carousel Wrapper -->
+            </div>
+
+        </section>
+        <!-- Section: Testimonials v.2 -->
+
+        <!-- APPLICATION PROCESS -->
+        <section class="application-process pt-2 pb-5">
+            <div class=" container location-container pb-5 pt-5">
+                <h6 class="section-title now-what-title col-2 ">NOW WHAT</h6>
+                <h3 class="courses-intro col-sm-8 ">Application Process</h3>
+                <p class="courses-paragraph col-md-6 col-sm-8 ">(Application deadline: 11/11/2011)</p>
+            </div>
+            <div class="d-flex px-4 mx-auto pb-5 flex-md-row flex-column col-11">
+                <div class="app-step  mx-2">
+                    <span class="app-number position-absolute">1.</span>
+                    <h5 class="app-step-title text-center mt-5 mb-1"><b>Make Your Choices</b></h5>
+                    <div class="position-absolute highlight"></div>
+                    <hr class="app-divider mb-4">
+                    <p class="px-5 mb-5 mt-4 app-text">Look through all the incredible stuff that we got lined up for you. Decide which one best reflects you and let us know through our application form and then lets rollll!!</p>
+                </div>
+                <div class="app-step  mx-2">
+                    <span class="app-number position-absolute">2.</span>
+
+                    <h5 class="app-step-title text-center mt-5"><b>Make Your Choices</b></h5>
+                    <hr class="app-divider mb-4">
+                    <p class="px-5 mb-5 mt-4 app-text">Look through all the incredible stuff that we got lined up for you. Decide which one best reflects you and let us know through our application form and then lets rollll!!</p>
+                </div>
+                <div class="app-step  mx-2">
+                    <span class="app-number position-absolute">3.</span>
+
+                    <h5 class="app-step-title text-center mt-5"><b>Make Your Choices</b></h5>
+                    <hr class="app-divider mb-4">
+                    <p class="px-5 mb-5 mt-4 app-text">Look through all the incredible stuff that we got lined up for you. Decide which one best reflects you and let us know through our application form and then lets rollll!!</p>
+                </div>
+                <div class="app-step mx-2">
+                    <span class="app-number position-absolute">4.</span>
+
+                    <h5 class="app-step-title text-center mt-5"><b>Make Your Choices</b></h5>
+                    <hr class="app-divider mb-4">
+                    <p class="px-5 mb-5 mt-4 app-text">Look through all the incredible stuff that we got lined up for you. Decide which one best reflects you and let us know through our application form and then lets rollll!!</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 mb-5">
+                <button type="button" class="btn btn-lg start-application px-4 py-2">Start Your Application</button>
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <div class="contact-us p-sm-5 px-sm-3 py-5">
+            <div class="inner-contact text-center pb-5">
+                <h3 class="questions pt-5">Questions?</h3>
+                <p class="courses-paragraph pb-2">Shoot us a message!</p>
+                <hr class="w-50">
+                <div class="contact-info pt-2">
+                    <p class="contact-title ">EMAIL: 12345678@abc.com</p>
+                    <p class="contact-title px-3">WHATSAPP: +123 34567890</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <footer>
+            <div class="container pt-5 border-bottom">
+                <div class="row mt-5 ml-3">
+                    <div class="col-md-3 col-sm-12 text-center footer-logo">
+                        <img class="logo" src="img\logo.png" height="50" alt="logo">
+                        <span class="footer-logo-name"> BRAND NAME </span>
+                        <p class="footer-tagline text-center">Eu augue ut lectus arcu bibendum at.</p>
+                    </div>
+                    <div class="col-md-9 col-sm-12 pl-5">
+                        <div class="col-md-2 col-sm-6 col-6 p-0 float-left mb-3">
+                            <h5 class="mb-4 font-weight-bold text-uppercase footer-section-title">Menu</h5>
+                            <hr class="footer-divider">
+                            <ul class="list-group">
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="../sales/sales-performance-market-pipeline.html">Home</a></li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="../project-management/project-management.html ">About Us</a></li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="../workforce/workforce-organization-management-hr.html">Programs</a></li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="../e-commerce/e-commerce.html"> Acconmodations</a></li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="../finance/finance-accounting-erp.html">FAQs</a></li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="../business-apps/business-apps.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-6 p-0 mb-3 float-left">
+                            <h5 class="mb-4 font-weight-bold text-uppercase footer-section-title">Program</h5>
+                            <hr class="footer-divider">
+
+                            <ul class="list-group">
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://github.com/naologic">Nomadic Entrepreneurship</a></li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://stackshare.io/naologic">Social Entrepreneurship</a></li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="https://stackshare.io/naologic">Sustainable Ecosystem</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                            <h5 class="mb-4 font-weight-bold text-uppercase footer-section-title">Contact Us</h5>
+                            <hr class="footer-divider">
+
+                            <ul class="list-group">
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                    <a href="../about-naologic.html"><i class="fas fa-envelope-open-text"></i> abcdefghi@abc.com</a>
+                                </li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                    <a href="https://blog.naologic.com"><i class="fab fa-whatsapp"></i> +12 345678910</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                            <h5 class="mb-4 font-weight-bold text-uppercase footer-section-title">Connect</h5>
+                            <hr class="footer-divider">
+
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                                    <a href="https://www.linkedin.com/company/naologic"><i class="fab fa-instagram mr-1 fa-2x"></i></a>
+                                </li>
+                                <li class="list-group-item bg-transparent border-0 p-0 mb-2 ml-3">
+                                    <a href="https://twitter.com/naologicerp"><i class="fab fa-facebook mr-1 fa-2x"></i></a>
+                                </li class="list-group-item bg-transparent border-0 p-0 mb-2">
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="py-4 d-flex justify-content-center align-items-center">
+                            <p class="copywrite">© 2019 Brand Name by mariuszdaniel. All right reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="bootstrap\jquery-3.4.1.min.js"></script>
-        <script src="bootstrap\popper.min.js"></script>
-        <script src="bootstrap\bootstrap.min.js"></script>
+        <script src="bootstrap\jquery-3.4.1.min.js "></script>
+        <script src="bootstrap\popper.min.js "></script>
+        <script src="bootstrap\bootstrap.min.js "></script>
 
         <!-- NAVBAR ANIMATION -->
         <script>
@@ -174,7 +485,26 @@
                 });
             });
         </script>
+
+        <!-- DROPDOWN ON HOVER -->
+        <script>
+            $(function() {
+                $('.mydropdownjQuery').hover(function() {
+                        $(this).addClass('show');
+                        $(this).find('.dropdown-menu').addClass('show');
+                    },
+                    function() {
+                        $(this).removeClass('show');
+                        $(this).find('.dropdown-menu').removeClass('show');
+                    });
+            });
+        </script>
+
+
     </div>
+    <script src="js/classie.js "></script>
+    <script src="js/demo7.js "></script>
+    <script src="https://kit.fontawesome.com/f930095f9b.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
